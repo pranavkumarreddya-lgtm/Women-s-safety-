@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Women Safety Alert System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="loginSection" class="container">
+    <div class="header-icon">🛡️</div>
+    <h1>Secure Login</h1>
+    <p>Please enter your details to activate SOS</p>
+    <input type="text" id="username" placeholder="Enter Name" class="input-field">
+    <input type="password" id="passcode" placeholder="Enter 4-Digit PIN" class="input-field">
+    <button id="loginBtn" class="primary-btn">ACTIVATE SYSTEM</button>
+  </div>
+
+  <div id="sosSection" class="container" style="display: none;">
+    <h1>🚨 SAFETY ALERT 🚨</h1>
+    <p>Voice "<b>HELP</b>" or <b>SHAKE</b> phone in emergency</p>
+
+    <div class="control-panel">
+      <button id="sosBtn" class="sos-btn">SEND SOS</button>
+      <button id="stopBtn" class="stop-btn">STOP SOS</button>
+    </div>
+
+    <div id="alertBox"></div>
+
+    <h3>Emergency Contacts</h3>
+    <div id="contactList">
+      <button class="callBtn" data-number="+919381558432">📞 Call Guardian</button>
+      <button class="callBtn" data-number="+917013629081">📞 Friend 1</button>
+      <button class="callBtn" data-number="+919390116871">📞 Friend 2</button>
+    </div>
+    
+    <button id="logoutBtn" class="logout-btn">Logout</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
